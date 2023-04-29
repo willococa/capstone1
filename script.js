@@ -1,5 +1,5 @@
 // Get references to the button and elements
-var moreButton = document.getElementById("more-btn");
+const moreButton = document.getElementById('more-btn');
 
 // Array of participant objects
 const participants = [
@@ -8,7 +8,7 @@ const participants = [
     name: 'Son Goku',
     title: 'Winner of the galactic martial art tournament',
     bio: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque unde illum',
-    hide: ''
+    hide: '',
 
   },
   {
@@ -16,7 +16,7 @@ const participants = [
     name: 'Naruto',
     title: 'Title of participant',
     bio: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque unde illum',
-    hide: ''
+    hide: '',
 
   },
   {
@@ -24,7 +24,7 @@ const participants = [
     name: 'Son Goku',
     title: 'Winner of the galactic martial art tournament',
     bio: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque unde illum',
-    hide: 'hide'
+    hide: 'hide',
 
   },
   {
@@ -32,7 +32,7 @@ const participants = [
     name: 'Naruto',
     title: 'Title of participant',
     bio: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque unde illum',
-    hide: 'hide'
+    hide: 'hide',
 
   },
   {
@@ -40,7 +40,7 @@ const participants = [
     name: 'Son Goku',
     title: 'Winner of the galactic martial art tournament',
     bio: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque unde illum',
-    hide: 'hide'
+    hide: 'hide',
 
   },
   {
@@ -48,17 +48,16 @@ const participants = [
     name: 'Naruto',
     title: 'Title of participant',
     bio: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque unde illum',
-    hide: 'hide'
+    hide: 'hide',
 
   },
 ];
 
-
-window.addEventListener('load', function() {
+window.addEventListener('load', () => {
   const participantsContainer = document.getElementById('participants-desktop');
   let participantsHtml = '';
 
-  for (const participant of participants) {
+  participants.forEach((participant) => {
     participantsHtml += `
       <article class="participant">
         <div class="participant-photo"><img src="${participant.photo}" alt=""></div>
@@ -69,59 +68,59 @@ window.addEventListener('load', function() {
         </div>
       </article>
     `;
-  }
-
-  participantsContainer.innerHTML = participantsHtml;
+    participantsContainer.innerHTML = participantsHtml;
+  });
 });
-window.addEventListener('load', function() {
+
+window.addEventListener('load', () => {
   const participantsContainer = document.getElementById('participants-mobile');
   let participantsHtml = '';
 
-  for (const participant of participants) {
+  participants.forEach((participant) => {
     participantsHtml += `
-      <article class="participant element ${participant.hide}">
-        <div class="participant-photo"><img src="${participant.photo}" alt="${participant.name}"></div>
-        <div class="participant-info">
-          <h3>${participant.name}</h3>
-          <blockquote>${participant.title}</blockquote>
-          <p>${participant.bio}</p>
-        </div>
-      </article>
-    `;
-  }
-
-  participantsContainer.innerHTML = participantsHtml;
+        <article class="participant element ${participant.hide}">
+          <div class="participant-photo"><img src="${participant.photo}" alt="${participant.name}"></div>
+          <div class="participant-info">
+            <h3>${participant.name}</h3>
+            <blockquote>${participant.title}</blockquote>
+            <p>${participant.bio}</p>
+          </div>
+        </article>
+      `;
+    participantsContainer.innerHTML = participantsHtml;
+  });
 });
+
 // Set event listener for button click
-moreButton.addEventListener("click", function() {
-  var elements = document.querySelectorAll(".element");
+moreButton.addEventListener('click', () => {
+  const elements = document.querySelectorAll('.element');
   // Toggle the hide class on the elements
-  for (var i = 0; i < elements.length; i++) {
+  for (let i = 0; i < elements.length; i += 1) {
     if (i >= 2) {
-      elements[i].classList.toggle("hide");
+      elements[i].classList.toggle('hide');
     }
   }
-  var buttonText = moreButton.textContent.toUpperCase();
+  const buttonText = moreButton.textContent.toUpperCase();
   // Toggle the button text
-  if (buttonText == "MORE ") {
-    moreButton.innerHTML = "HIDE" + moreButton.innerHTML.substring(4);
+  if (buttonText === 'MORE ') {
+    moreButton.innerHTML = `HIDE${moreButton.innerHTML.substring(4)}`;
   } else {
-    moreButton.innerHTML = "MORE" + moreButton.innerHTML.substring(4);
+    moreButton.innerHTML = `MORE${moreButton.innerHTML.substring(4)}`;
   }
 });
 
-const mobileBtn = document.getElementById("hamburger");
-const mobileMenu = document.getElementById("mobile-menu");
-const closeBtn = document.getElementById("close-btn");
+const mobileBtn = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+const closeBtn = document.getElementById('close-btn');
 
 // Show mobile menu when mobile button is clicked
-mobileBtn.addEventListener("click", () => {
-  mobileMenu.style.display = "block";
-  document.body.classList.add("no-scroll");
+mobileBtn.addEventListener('click', () => {
+  mobileMenu.style.display = 'block';
+  document.body.classList.add('no-scroll');
 });
 
 // Hide mobile menu when close button is clicked
-closeBtn.addEventListener("click", () => {
-  mobileMenu.style.display = "none";
-  document.body.classList.remove("no-scroll");
+closeBtn.addEventListener('click', () => {
+  mobileMenu.style.display = 'none';
+  document.body.classList.remove('no-scroll');
 });
