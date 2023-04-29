@@ -16,7 +16,7 @@
     <section class="top-header desktop">
         <nav>
             <ul>
-                <li>  <span class="facebook"></span>  </li>
+                <li> <span class="facebook"></span>  </li>
                 <li><span class="twitter"></span></li>
                 <li><a href="#" class="">English</a></li>
                 <li><a href="#">My Page</a></li>
@@ -25,7 +25,7 @@
         </nav>
     </section>
     <section class="bottom-header desktop">
-        <img src="assets/logo.png" alt="Logo" class="logo">
+        <a href="index.html" class="main-logo"><img src="assets/cblogo.png" alt="Logo" class="logo"></a>
         <nav class="main-menu-desktop">
             <ul>
                 <li><a href="#" class="">About</a></li>
@@ -54,7 +54,7 @@
                     <time datetime="2023-10-16">2023.10.16(FRI)</time>
             </div>
             <footer>
-                <small>&copy; Casa Blanca, Example Corporation</small>
+                <small>&copy; Casa Blanca, Example Corporation, video game center and more</small>
             </footer>
         </div>
     </section>
@@ -87,11 +87,36 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
             </article>
         </div>
-        <button class="join-btn">Join Online Tournament</button>
+        <a href="#" class="see-program desktop">See the whole program</a>
+        <button class="join-btn mobile">Join Online Tournament</button>
     </section>
+    <div class="desktop-elements desktop">               
+    <section  class="participants-container">
+        <div id="participants-desktop" class="participants">
+        </div>
+    </section>    
+    <section class="partners">
+        <h2 class="underlined">Partner</h2>
+        <div class="partner-img-container">            
+        <img src="assets/mozilla.png" alt="Moxila">
+        <img src="assets/googlekorea.png" alt="Google">
+        <img src="assets/naver.png" alt="Naver">
+        <img src="assets/kakao.png" alt="kakao">
+        <img src="assets/airbnb.png" alt="airbnb">
+        </div>
+    </section>
+    <footer class="main-footer">
+      <img src="assets/cblogo.png" alt="cclogo"> 
+      
+      <small>&copy; 2023 Casa Blanca, Example Corporation <br>
+        Some rights reserved
+      </small>
+    </footer>
+    </div>
+    <div class="elements mobile">        
     <section class="participants-container">
-        <div class="participants">
-            <article class="participant">
+        <div id="participants-mobile" class="participants">
+            <article class="participant element">
                 <div class="participant-photo"><img src="assets/goku.jpg" alt=""></div>
                 <div class="participant-info">
                     <h3>Son Goku</h3>
@@ -99,7 +124,39 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque unde illum </p>
                 </div>
             </article> 
-            <article class="participant">
+            <article class="participant element">
+                <div class="participant-photo"><img src="assets/naruto.jpg" alt=""></div>
+                <div class="participant-info">
+                    <h3>Naruto</h3>
+                    <blockquote>Title of participant</blockquote>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque unde illum</p>
+                </div>
+            </article>
+            <article class="participant element hide">
+                <div class="participant-photo"><img src="assets/goku.jpg" alt=""></div>
+                <div class="participant-info">
+                    <h3>Son Goku</h3>
+                    <blockquote>Winner of the galactic martial art tournament</blockquote>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque unde illum </p>
+                </div>
+            </article> 
+            <article class="participant element hide">
+                <div class="participant-photo"><img src="assets/naruto.jpg" alt=""></div>
+                <div class="participant-info">
+                    <h3>Naruto</h3>
+                    <blockquote>Title of participant</blockquote>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque unde illum</p>
+                </div>
+            </article>
+            <article class="participant element hide">
+                <div class="participant-photo"><img src="assets/goku.jpg" alt=""></div>
+                <div class="participant-info">
+                    <h3>Son Goku</h3>
+                    <blockquote>Winner of the galactic martial art tournament</blockquote>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque unde illum </p>
+                </div>
+            </article> 
+            <article class="participant element hide">
                 <div class="participant-photo"><img src="assets/naruto.jpg" alt=""></div>
                 <div class="participant-info">
                     <h3>Naruto</h3>
@@ -108,7 +165,27 @@
                 </div>
             </article> 
         </div> 
-        <button class="more-btn">MORE <span class="arrow-icon"></span></button> 
+    </section>    
+    <section class="partners element hide">
+        <h2 class="underlined">Partner</h2>
+        <div class="partner-img-container">            
+        <img src="assets/mozilla.png" alt="Moxila">
+        <img src="assets/googlekorea.png" alt="Google">
+        <img src="assets/naver.png" alt="Naver">
+        <img src="assets/kakao.png" alt="kakao">
+        <img src="assets/airbnb.png" alt="airbnb">
+        </div>
     </section>
+    <footer class="main-footer element hide">
+      <img src="assets/cblogo.png" alt="cclogo"> 
+      
+      <small>&copy; 2023 Casa Blanca, Example Corporation <br>
+        Some rights reserved
+      </small>
+    </footer>
+    <button id="more-btn" class="more-btn mobile">MORE <span class="arrow-icon"></span></button> 
+
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
