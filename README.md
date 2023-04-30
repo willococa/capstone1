@@ -104,8 +104,8 @@ it to show my clients my work
 
 👤 **William Ocoro**
 
-- GitHub: [@githubhandle](https://github.com/willocoro)
-- Twitter: [@twitterhandle](https://twitter.com/willocoro)
+- GitHub: [@githubhandle](https://github.com/willococa)
+- Twitter: [@twitterhandle](https://twitter.com/willococa)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/william-ocor%C3%B3-591003268)
 
 

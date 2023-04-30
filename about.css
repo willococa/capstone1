@@ -213,7 +213,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 30px;
+  padding: 30px; 
 }
 
 .partners h2 {
@@ -235,7 +235,7 @@ body {
 .partners img {
   opacity: 0.5;
   width: 100px;
-  filter: grayscale();
+  filter: brightness(10000%);
 }
 
 .partner-img-container {
@@ -262,11 +262,27 @@ body {
   display: none;
 }
 
-.main-footer .cblogo {
+.logo .cblogo {
   width: 180px;
   height: 120px;
 }
 
+
+.main-footer {
+  background-color: var(--bg-fill);
+  color: var(--dark-fill);
+}
+
+.img-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-img {
+  width: 180px;
+  height: 100px;
+  margin-right: 40px;
+}
 @media (min-width: 768px) {
   .desktop {
     display: block;
@@ -408,7 +424,7 @@ body {
   }
 
   .logo .cblogo {
-    width: 100%;
+    width: 35%;
   }
 
   .past-tournaments {
@@ -444,9 +460,15 @@ body {
     color: var(--bg-fill);
   }
 
-  .main-footer .cblogo {
-    width: 320px;
-    height: 220px;
+  .img-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .footer-img {
+    width: 180px;
+    height: 100px;
+    margin-right: 40px;
   }
 }
 
