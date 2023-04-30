@@ -213,7 +213,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 30px; 
+  padding: 30px;
 }
 
 .partners h2 {
@@ -252,6 +252,8 @@ body {
   flex-direction: row;
   justify-content: space-between;
   padding: 30px;
+  background-color: var(--bg-fill);
+  color: var(--dark-fill);
 }
 
 .main-footer > * {
@@ -267,12 +269,6 @@ body {
   height: 120px;
 }
 
-
-.main-footer {
-  background-color: var(--bg-fill);
-  color: var(--dark-fill);
-}
-
 .img-container {
   display: flex;
   justify-content: flex-end;
@@ -283,6 +279,7 @@ body {
   height: 100px;
   margin-right: 40px;
 }
+
 @media (min-width: 768px) {
   .desktop {
     display: block;
