@@ -35,7 +35,9 @@
 
 **[capstone1]** is a project to create my own capstone1 and use 
 it to show my clients my work
-
+<ul>
+    <li><a href="https://www.loom.com/share/5eef720bd7854e58813a2a50044f09f3">Video of Project Demonstration</a></li>
+  </ul>
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
