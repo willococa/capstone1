@@ -290,6 +290,19 @@ body {
   display: none;
 }
 
+.btn:active {
+  transform: scale(0.9);
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:disabled {
+  background-color: var(--medium-fill);
+  cursor: not-allowed;
+}
+
 @media (min-width: 760px) {
   .desktop {
     display: block;
@@ -378,8 +391,13 @@ body {
     color: var(--dark-fill);
   }
 
-  .main-menu-desktop a:hover {
-    color: var(--bright-fillz);
+  .main-menu-desktop li a:hover {
+    color: var(--bright-fill);
+  }
+
+  .main-menu-desktop li a:active {
+    color: var(--bright-fill);
+    border: var(--bright-fill) 3px solid;
   }
 
   .headline {
@@ -486,6 +504,20 @@ body {
 
   .participant {
     width: 45%;
+  }
+
+  .main-footer{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .main-footer .img-container{
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-img{
+    width: 130px;
   }
 }
 

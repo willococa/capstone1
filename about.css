@@ -44,10 +44,6 @@ body {
   margin: 5px;
 }
 
-.headline {
-  background-color: var(--bg-fill);
-}
-
 .headline blockquote {
   color: var(--bright-fill);
   margin: 0;
@@ -90,7 +86,7 @@ body {
 .headline::before {
   content: '';
   background: url(/assets/mobile_intro_bg.png) top  center no-repeat;
-  background-size: contain;
+  background-size: cover;
   -moz-transform: scaleX(-1);
   -o-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
@@ -260,6 +256,188 @@ body {
 
 .main-footer > * {
   width: 50%;
+}
+
+.desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .desktop {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+  
+  .top-header {
+    display: flex;
+    position: relative;
+    background-color: var(--dark-fill);
+    justify-content: flex-end;
+    padding-right: 12%;
+    font-size: smaller;
+  }
+
+  .top-header .facebook::before {
+    content: '';
+    position: absolute;
+    background: url('assets/facebook.png') top center no-repeat;
+    background-size: contain;
+    width: 15px;
+    height: 15px;
+  }
+
+  .top-header .twitter::before {
+    content: '';
+    position: absolute;
+    background: url('assets/twitter.png') top center no-repeat;
+    background-size: contain;
+    width: 15px;
+    height: 15px;
+  }
+
+  .top-header ul {
+    list-style: none;
+    display: flex;
+    column-gap: 30px;
+    margin: 5px;
+  }
+
+  .top-header a {
+    text-decoration: none;
+    color: var(--bg-fill);
+  }
+
+  .bottom-header {
+    display: flex;
+    background-color: #fff;
+    justify-content: space-around;
+  }
+  
+  .bottom-header .main-logo img {
+    width: 120px;
+    height: 70px;
+  }
+
+  .bottom-header ul {
+    list-style: none;
+    display: flex;
+    column-gap: 30px;
+    margin: 5px;
+  }
+
+  .bottom-header .main-menu-desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-menu-desktop a {
+    text-decoration: none;
+    color: var(--dark-fill);
+  }
+
+  .main-menu-desktop li a:hover {
+    color: var(--bright-fill);
+  }
+
+  .main-menu-desktop li a:active {
+    color: var(--bright-fill);
+    border: var(--bright-fill) 3px solid;
+  }
+
+  .headline {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-header {
+    width: 75vw;
+    padding: 0;
+    margin-top: 50px;
+  }
+
+  .main-header blockquote {
+    font-size: 38px;
+  }
+
+  .main-header h1 {
+    font-size: 58px;
+    font-weight: 900;
+  }
+
+  .main-header p{
+    align-self: center;
+    width: 45vw;
+  }
+
+  .main-header .time {
+    font-size: 22px;
+    font-weight: 900;
+  }
+
+  .headline::before {
+    content: '';
+    background: url(/assets/main_big.png) top  center no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .logo-container h2 {
+    font-size: 24px;
+  }
+
+  .logo-container h2::after {
+    top: 105px;
+  }
+
+  .logo-container .logo {
+    width: 40vw;
+    align-self: center;
+  }
+
+  .logo .cblogo {
+    width: 100%;
+  }
+
+  .past-tournaments {
+    width: 75vw;
+    align-self: center;
+  }
+
+  .past-tournaments h2 {
+    font-size: 24px;
+  }
+
+  .past-tournaments h2::after {
+    top: 75px;
+  }
+
+  .tournaments-container {
+    flex-direction: row;
+    justify-content: space-around;
+    column-gap: 8px;
+  }
+
+  .tournament {
+    width: 450px;
+    height: 340px;
+  }
+
+  .tournament h3 {
+    font-size: 22px;
+  }
+
+  footer {
+    background-color: var(--dark-fill);
+    color: var(--bg-fill);
+  }
 }
 
 /* Mobile menu styles */

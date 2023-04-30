@@ -28,25 +28,29 @@
         <a href="index.html" class="main-logo"><img src="assets/cblogo.png" alt="Logo" class="logo"></a>
         <nav class="main-menu-desktop">
             <ul>
-                <li><a href="#" class="">About</a></li>
+                <li><a href="about.html" class="">About</a></li>
                 <li><a href="#" class="">Program</a></li>
                 <li><a href="#" class="">Join</a></li>
                 <li><a href="#" class="">Sponsor</a></li>
                 <li><a href="#" class="">News</a></li>
-                <li><a href="#" class="">Tournament</a> </li>
+                <li><a href="/" class="">Tournament</a> </li>
             </ul>
         </nav>
     </section>
     <section id="headline" class="headline">
         <!-- Mobile menu -->
         <div class="mobile-menu" id="mobile-menu">
-            <button class="close-btn" id="close-btn">&times;</button>
+            <button class="close-btn btn" id="close-btn">&times;</button>
             <ul class="mobile-menu-items">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/about.html">About</a></li>
+            <li><a class="nav-link" href="/">Home</a></li>
+            <li><a class="nav-link" href="about.html">About</a></li>
+            <li><a class="nav-link" href="#headline">Header</a></li>
+            <li><a class="nav-link" href="#main-program">Programs</a></li>
+            <li><a class="nav-link" href="#players">Players</a></li>
+            <li><a class="nav-link" href="#partners">Partners</a></li>
             </ul>
         </div>
-        <div class="main-header">        
+        <div id="headline"  class="main-header">        
             <header class="main-menu mobile">
                 <nav id="hamburger">
                     <span class="bar"></span><span class="bar"></span><span class="bar"></span>
@@ -66,7 +70,7 @@
             </footer>
         </div>
     </section>
-    <section class="main-program">
+    <section id="main-program" class="main-program">
         <h2>Main Program</h2>
         <div class="programs-container">
             <article class="program program-1">
@@ -96,14 +100,14 @@
             </article>
         </div>
         <a href="#" class="see-program desktop">See the whole program</a>
-        <button class="join-btn mobile">Join Online Tournament</button>
+        <button class="join-btn btn mobile">Join Online Tournament</button>
     </section>
     <div class="desktop-elements desktop">               
     <section  class="participants-container">
         <div id="participants-desktop" class="participants">
         </div>
     </section>    
-    <section class="partners">
+    <section id="players" class="partners">
         <h2 class="underlined">Partner</h2>
         <div class="partner-img-container">            
         <img src="assets/mozilla.png" alt="Moxila">
@@ -114,14 +118,18 @@
         </div>
     </section>
     <footer class="main-footer">
-      <img src="assets/cblogo.png" alt="cclogo"> 
-      
-      <small>&copy; 2023 Casa Blanca, Example Corporation <br>
-        Some rights reserved
-      </small>
+        <span class="img-container">
+           <img class="footer-img" src="assets/cblogo.png" alt="cclogo"> 
+        </span> 
+        <span class="info-container">             
+         <small>&copy; 2023 Casa Blanca, Example Corporation <br>
+           Some rights reserved        
+         </small>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat quas modi, ipsa, vitae numquam </p>
+        </span>
     </footer>
     </div>
-    <div class="elements mobile">        
+    <div id="partners" class="elements mobile">        
     <section class="participants-container">
         <div id="participants-mobile" class="participants">
         </div> 
@@ -143,7 +151,7 @@
         Some rights reserved
       </small>
     </footer>
-    <button id="more-btn" class="more-btn mobile">MORE <span class="arrow-icon"></span></button> 
+    <button id="more-btn" class="more-btn btn mobile">MORE <span class="arrow-icon"></span></button> 
 
     </div>
     <script src="script.js"></script>
