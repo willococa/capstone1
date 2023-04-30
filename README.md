@@ -35,7 +35,9 @@
 
 **[capstone1]** is a project to create my own capstone1 and use 
 it to show my clients my work
-
+<ul>
+    <li><a href="https://www.loom.com/share/c429abf1e5b540b3a4bb67d6d9659958">Video of Project Demonstration</a></li>
+  </ul>
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -100,8 +102,8 @@ it to show my clients my work
 
 👤 **William Ocoro**
 
-- GitHub: [@githubhandle](https://github.com/willocoro)
-- Twitter: [@twitterhandle](https://twitter.com/willocoro)
+- GitHub: [@githubhandle](https://github.com/willococa)
+- Twitter: [@twitterhandle](https://twitter.com/willococa)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/william-ocor%C3%B3-591003268)
 
 

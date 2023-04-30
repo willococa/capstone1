@@ -124,3 +124,8 @@ closeBtn.addEventListener('click', () => {
   mobileMenu.style.display = 'none';
   document.body.classList.remove('no-scroll');
 });
+
+document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click', () => {
+  mobileMenu.style.display = 'none';
+  document.body.classList.remove('no-scroll');
+}));
