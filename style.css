@@ -506,17 +506,17 @@ body {
     width: 45%;
   }
 
-  .main-footer{
+  .main-footer {
     display: flex;
     justify-content: space-around;
   }
 
-  .main-footer .img-container{
+  .main-footer .img-container {
     display: flex;
     justify-content: center;
   }
 
-  .footer-img{
+  .footer-img {
     width: 130px;
   }
 }

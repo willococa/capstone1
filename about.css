@@ -262,6 +262,11 @@ body {
   display: none;
 }
 
+.main-footer .cblogo {
+  width: 180px;
+  height: 120px;
+}
+
 @media (min-width: 768px) {
   .desktop {
     display: block;
@@ -270,7 +275,7 @@ body {
   .mobile {
     display: none;
   }
-  
+
   .top-header {
     display: flex;
     position: relative;
@@ -315,7 +320,7 @@ body {
     background-color: #fff;
     justify-content: space-around;
   }
-  
+
   .bottom-header .main-logo img {
     width: 120px;
     height: 70px;
@@ -369,7 +374,7 @@ body {
     font-weight: 900;
   }
 
-  .main-header p{
+  .main-header p {
     align-self: center;
     width: 45vw;
   }
@@ -434,9 +439,14 @@ body {
     font-size: 22px;
   }
 
-  footer {
+  .main-footer {
     background-color: var(--dark-fill);
     color: var(--bg-fill);
+  }
+
+  .main-footer .cblogo {
+    width: 320px;
+    height: 220px;
   }
 }
 
